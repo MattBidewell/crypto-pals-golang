@@ -13,7 +13,7 @@ func xorHex(hex []byte, key string) ([]byte) {
 	encryptedHex := make([]byte, len(hex))
 
 	for i, char := range hex {
-		fmt.Printf("encoded %s with key %s\n", string(char), string(key[i % len(key)]))
+		// fmt.Printf("encoded %s with key %s\n", string(char), string(key[i % len(key)]))
 		encryptedHex[i] = char ^ byte(rune(key[i % len(key)]))
 	}
 
