@@ -2,6 +2,8 @@
 
 GOEXEC=$(which go)
 
+cd "$(dirname "$0")"
+
 for dir in ./sets/*;
   do (
     cd "$dir"
